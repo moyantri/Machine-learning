@@ -38,6 +38,5 @@ def read_tfrecord(example, labeled):
     dataset = tf.data.TFRecordDataset(filenames, num_parallel_reads=AUTOTUNE) # automatically interleaves reads from multiple files
     dataset = dataset.with_options(ignore_order) # uses data as soon as it streams in, rather than in its original order
     dataset = dataset.map(partial(read_tfrecord, labeled=labeled), num_parallel_calls=AUTOTUNE)
-    # returns a dataset of (image, label) pairs if labeled=True or (image, id) pairs if labeled=False
     return dataset
-    
+    # returns a dataset of (image, label) pairs if labeled=True or (image, id) pairs if labeled=False
