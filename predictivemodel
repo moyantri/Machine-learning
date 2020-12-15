@@ -1,0 +1,22 @@
+Predicting-Movie-Genres-Based-on-Plot-Summaries-using-PySpark
+The objective of this project is to get started with predictive Analytics with Apache Spark. The goals of the project are to use Spark Libraries to implement an end to end Predictive Analytics Pipeline.
+
+PART 1 - Basic Model
+● Analyze the data and preprocess it if needed
+● Create a machine learning model (use any algorithm) in spark to use the information provided in the train set to predict the genres associated with a movie.
+● You should create a term-document matrix from the plots and use these as feature vectors for the machine learning model.
+● Generate predictions for the test set and upload to Kaggle website
+● Report macro F1 score obtained for your submission from the Kaggle website
+
+PART 2 - Use TF-IDF to improve the model
+● Focussing on the summary of the movie, implement Term Frequency-Inverse Document Frequency (TF-IDF) based feature engineering technique to improve the performance of the model
+● Similar to part 1, generate predictions and upload to the Kaggle website
+● Ideally, your model should improve performance from the previous step
+
+PART 3 - Custom Feature Engineering
+● Implement any one of the modern text-based feature engineering methodology to improve the performance of the model
+● Some of the methods to consider are (But not limited to)
+○ Word2vec
+○ Glove
+○ Doc2vec
+○ Topic Modelling
